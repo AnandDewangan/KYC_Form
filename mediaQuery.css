@@ -1,0 +1,35 @@
+@media screen and (width < 1024px) {
+    :root{
+        --container-padding: 2rem;
+    }
+}
+@media screen and (width < 768px) {
+    :root{
+        --container-padding: 1rem;
+        --main-heading-font: 2rem;
+        --heading-font: 1rem;
+        --font-size: 0.8rem;
+    }
+    input{
+        width: 100%;
+    }
+    .checkbox{
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+    }
+    button{
+        width: 7rem;
+        height: 2rem;
+    }
+}
+@media screen and (width < 425px) {
+    .dob, #country, .file_upload{
+        display: block;
+        width: 100%;
+        margin: 1rem 0px;
+    }
+    .mobile{
+        flex-direction: column;
+    }
+}

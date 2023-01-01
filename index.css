@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prosto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------usibility class------------------------ */
+:root{
+    --main-heading-font: 3rem;
+    --main-heading-color: #807788;
+    --heading-font: 1.5rem;
+    --heading-color: #2184de;
+    --font-size: 1rem;
+    --selection-color: rgb(19, 42, 35);
+    --selection-bg-color: rgb(35, 254, 10);
+    --container-padding: 5rem;
+    --container-margin: 2rem;
+    --other-color: rgba(255, 255, 255, 0.854);
+    --input-color: #fed654;
+}
+::selection{
+    color: var(--selection-color);
+    background-color: var(--selection-bg-color);
+}
+#currentDate{
+    color: #fed654;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.bigContainer{
+    background-color: #252526;
+    padding: 1rem var(--container-padding);
+}
+.headingContainer{
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-heading-color);
+}
+.container{
+    margin: var(--container-margin) 0px;
+    font-size: var(--font-size);
+    font-family: 'Prosto One', cursive;
+    word-spacing: 5px;
+}
+h1{
+    font-size: var(--main-heading-font);
+    color: var(--main-heading-color);
+    font-family: 'Fredoka One', cursive;
+}
+.heading {
+    justify-content: center;
+    align-items: center;
+    font-size: var(--heading-font);
+    font-family: 'Fredoka One', cursive;
+    color: var(--heading-color);
+    margin: 1rem 0;
+}
+label, p{
+    color: var(--other-color);
+}
+input{
+    border: none;
+    color: var(--input-color);
+    font-size: var(--font-size);
+    font-weight: 300;
+    background-color: rgb(47, 49, 49);
+    font-family: 'Prosto One', cursive;
+    padding: 3px 5px;
+}
+input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="number"]:hover{
+    box-shadow: 2px 2px 3px rgba(30, 149, 189, 0.5);
+}
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="tel"], input[type="file"]{
+    box-shadow: 2px 2px 4px black;
+}
+input[type=text]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus{
+    background-color: rgba(39, 119, 146, 0.614);
+}
+input[type="radio"], input[type="checkbox"]{
+    width: 2rem;
+    height: 1rem;
+}
+select{
+    padding: 0.5rem;
+    box-shadow: 2px 2px 4px black;
+    background-color: rgb(47, 49, 49);
+    color: rgba(205, 201, 201, 0.769);
+    border: none;
+    font-family: 'Prosto One', cursive;
+}
+/* -------------------- Identity Details-------------------------- */
+.headingContainer img{
+    width: 50px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+}
+.gender {
+    text-align: center;
+    
+}
+.dob{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 1rem;
+    margin: 1rem 0px;
+}
+
+/* ------------------------Address Details----------------------- */
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+#mobile{
+    width: 25%;
+}
+.mobile{
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0px;
+}
+#email{
+    width: 42%;
+}
+.checkbox{
+    justify-content: space-between;
+    align-items: center;
+}
+.check{
+    margin: 1rem 0px;
+}
+
+/* -----------------------File upload---------------------------- */
+.file_upload{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------Declearation--------------------------- */
+p{
+    margin: 1rem 0px;
+    word-spacing: 5px;
+}
+#date{
+    margin: 1rem 0px;
+}
+
+/* ------------------------Button-------------------------------- */
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 12rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: var(--font-size);
+    background-color: var(--input-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--heading-color);
+    border-radius: 3rem 3rem 3rem 0px;
+}
